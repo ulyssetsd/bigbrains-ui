@@ -42,7 +42,7 @@ class App extends Component {
   }
 
   onPictureSubmit = () => {
-    fetch('http://localhost:3000/clarifai', {
+    fetch(process.env.REACT_APP_API_URL+'/clarifai', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -53,7 +53,7 @@ class App extends Component {
       this.setState({ 
         boxs: regions
       });
-      fetch('http://localhost:3000/users/entries', {
+      fetch(process.env.REACT_APP_API_URL+'/users/entries', {
         method: 'put',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
