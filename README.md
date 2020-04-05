@@ -1,3 +1,13 @@
+## Setup local project
+
+- Create .env file that set those variables: 
+  - REACT_APP_API_URL: endpoint to [bigbrains-api](https://github.com/ulyssetsd/bigbrains-api)
+
+```bash
+npm install
+npm start
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
